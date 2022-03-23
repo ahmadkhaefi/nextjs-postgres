@@ -1,4 +1,4 @@
-import db from '../../library/db'
+import db from '~/library/db'
 
 export default async function handler(request, response) {
 	switch (request.method) {

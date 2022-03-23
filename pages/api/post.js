@@ -51,6 +51,14 @@ export default async function handler(request, response) {
 			response.status(304).redirect(`/post/${post[1].rows[0].id}`)
 			break
 		}
+		case 'DELETE': {
+			const {id} = request.query
+			await client.query(`
+				DELETE FROM Post WHERE id = '${id}'
+			`)
+			response.status(304).redirect('/')
+			break
+		}
 		default:
 			response.status(405).json({
 				error: ['Method Not Allowed']

@@ -1,0 +1,14 @@
+# nodejs
+node_modules
+
+# nextjs
+.next
+
+# files
+*.svg
+*.json
+*.md
+.eslintrc
+.prettierrc
+.prettierignore
+.gitignore

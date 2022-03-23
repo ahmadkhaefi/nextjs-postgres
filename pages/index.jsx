@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 import Layout from '../componets/Layout'
 import Input from '../componets/Input'
 import Textarea from '../componets/Textarea'
@@ -28,7 +28,7 @@ const Form = styled.form`
 
 export default function Home() {
 	const currentYear = new Date().getFullYear()
-	
+
 	const router = useRouter()
 	function submit(event) {
 		event.preventDefault()
@@ -58,9 +58,9 @@ export default function Home() {
 				<Button>SEND</Button>
 			</Form>
 			<Footer>
-				<p>© copyright {currentYear}. <a href="https://github.com/ahmadkhaefi">
-						see my github
-					</a>
+				<p>
+					© copyright {currentYear}.{' '}
+					<a href="https://github.com/ahmadkhaefi">see my github</a>
 				</p>
 			</Footer>
 		</Wrapper>

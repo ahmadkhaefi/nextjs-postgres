@@ -24,6 +24,11 @@ function Tools(properties) {
 					<Button>new</Button>
 				</a>
 			</Link>
+			<Link href="/posts" passHref>
+				<a>
+					<Button>all</Button>
+				</a>
+			</Link>
 			<Link href={`/post/update/${properties.id}`} passHref>
 				<a>
 					<Button>update</Button>

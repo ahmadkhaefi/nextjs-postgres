@@ -1,10 +1,11 @@
 import db from '~/library/db'
 
 export default async function handler(request, response) {
+	const client = await db
+
 	switch (request.method) {
 		case 'GET': {
 			const {id} = request.query
-			const client = await db
 			const post = await client.query(`
 				SELECT * FROM Post WHERE (
 					id = '${id}'
@@ -17,7 +18,6 @@ export default async function handler(request, response) {
 		}
 		case 'POST': {
 			const {title, content} = request.body
-			const client = await db
 			const post = await client.query(`
 				INSERT INTO Post (
 					title,
@@ -56,7 +56,7 @@ export default async function handler(request, response) {
 			await client.query(`
 				DELETE FROM Post WHERE id = '${id}'
 			`)
-			response.status(304).redirect('/')
+			response.status(304).redirect('/posts')
 			break
 		}
 		default:

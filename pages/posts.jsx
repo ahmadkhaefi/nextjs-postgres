@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
-import Spinner from '~/components/Spinner'
-import Layout from '~/components/Layout'
+import Spinner from '@components/Spinner'
+import Layout from '@components/Layout'
 
 const Wrapper = styled(Layout)`
 	display: flex;

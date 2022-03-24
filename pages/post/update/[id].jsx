@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import {useRouter} from 'next/router'
-import Layout from '~/components/Layout'
-import Input from '~/components/Input'
-import Textarea from '~/components/Textarea'
-import Tools from '~/components/Tools'
-import Button from '~/components/Button'
-import domain from '~/library/domain'
+import Layout from '@components/Layout'
+import Input from '@components/Input'
+import Textarea from '@components/Textarea'
+import Tools from '@components/Tools'
+import Button from '@components/Button'
+import domain from '@library/domain'
 
 export async function getServerSideProps(context) {
 	const {id} = context.params

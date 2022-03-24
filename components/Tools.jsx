@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router'
 import styled from 'styled-components'
 import Link from 'next/link'
-import Button from '~/components/Button'
+import Button from '@components/Button'
 
 function Tools(properties) {
 	const router = useRouter()

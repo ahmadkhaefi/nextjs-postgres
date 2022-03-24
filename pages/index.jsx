@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import {useRouter} from 'next/router'
-import Layout from '~/components/Layout'
-import Input from '~/components/Input'
-import Textarea from '~/components/Textarea'
-import Button from '~/components/Button'
-import Footer from '~/components/Footer'
+import Layout from '@components/Layout'
+import Input from '@components/Input'
+import Textarea from '@components/Textarea'
+import Button from '@components/Button'
+import Footer from '@components/Footer'
 
 const Wrapper = styled(Layout)`
 	display: flex;

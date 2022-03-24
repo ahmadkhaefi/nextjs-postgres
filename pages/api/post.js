@@ -1,4 +1,4 @@
-import db from '~/library/db'
+import db from '@library/db'
 
 export default async function handler(request, response) {
 	const client = await db
@@ -25,12 +25,9 @@ export default async function handler(request, response) {
 				) VALUES (
 					'${title}',
 					'${content}'
-				);
-				SELECT id FROM Post WHERE (
-					title = '${title}' AND content = '${content}'
-				)
+				) RETURNING id
 			`)
-			response.status(304).redirect(`/post/${post[1].rows[0].id}`)
+			response.status(304).redirect(`/post/${post.rows[0].id}`)
 			break
 		}
 		case 'PUT': {

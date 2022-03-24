@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import Layout from '~/components/Layout'
-import Button from '~/components/Button'
-import Tools from '~/components/Tools'
-import domain from '~/library/domain'
+import Layout from '@components/Layout'
+import Button from '@components/Button'
+import Tools from '@components/Tools'
+import domain from '@library/domain'
 
 export async function getServerSideProps(context) {
 	const {id} = context.params

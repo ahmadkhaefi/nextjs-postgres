@@ -27,6 +27,11 @@ clone this repo by using git
 ```bash
 git clone https://github.com/ahmadkhaefi/nextjs-postgres
 ```
+install npm packages
+
+```bash
+npm i
+```
 
 run nextjs app by using npm
 

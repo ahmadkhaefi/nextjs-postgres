@@ -15,7 +15,7 @@ You can use Docker to run the database. see [postgres docker image](http://hub.d
 - [styled-components](https://styled-components.com) 💅 helps us to use css in javascript
 
 ### import..from paths
-If understanding import..from paths is confusing for you, please see [jsconfig.json](https://github.com/ahmadkhaefi/nextjs-postgres/blob/master/jsconfig.json) file
+If understanding import..from paths is confusing for you, please see [jsconfig.json](https://github.com/ahmadkhaefi/nextjs-postgres/blob/main/jsconfig.json) file
 
 ### nextjs version
 This project uses [nextjs version 12.1](https://nextjs.org/blog/next-12-1) Some features, such as styled-components are only supported in this version.
